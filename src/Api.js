@@ -11,6 +11,7 @@ export default {
   fbPopup: async () => {
     const provider = new firebase.auth.FacebookAuthProvider();
     let result = await firebaseApp.auth().signInWithPopup(provider);
+    console.log(result)
     return result;
   },
   addUser: async (u) => {
