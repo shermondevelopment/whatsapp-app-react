@@ -108,9 +108,11 @@ export default ({user, data}) => {
         </div>
       </div>
       <div className="chatWindow--body" ref={body}>
-        {list.map((item, key) => (
+        { list && 
+          list.map((item, key) => (
             <MessageItem key={key} data={item} user={user}/>
-        ))}
+          ))
+        }
       </div>
       <div
         className="chatWindow--emojiarea"
