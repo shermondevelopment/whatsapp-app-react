@@ -25,8 +25,7 @@ export default ({onClick, active, data}) => {
               </div>
               <div className="chatListItem--line">
                 <div className="chatListItem--lastMsg">
-                    <p>{data.LastMessage}</p>
-                    {console.log(data)}
+                    <p>{data.lastMessage}</p>
                 </div>
               </div>
           </div>
