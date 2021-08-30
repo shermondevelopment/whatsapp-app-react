@@ -42,8 +42,6 @@ export default () => {
   }
 
   if(user == null) {
-     alert('e null');
-     console.log(user);
      return <Login onReceive={handleLoginData} />
   }
   return (
